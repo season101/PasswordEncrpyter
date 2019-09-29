@@ -8,25 +8,20 @@ input()
 print()
 print()
 
-masterKey = ("Enter a key that you want to use throughout your lifetime: ")
+masterKey = inputga("Enter a key that you want to use throughout your lifetime: ")
 imageName = input("Enter the image name you want to put password to: ")
 outputName = input("Enter the name for your output image: ")
-
+print()
 
 imageName+= ".jpg"
-
+outputName+= ".png"
 
 from cryptosteganography import CryptoSteganography
 
 crypto_steganography = CryptoSteganography(masterKey)
-'''
+
 # Save the encrypted file inside the image
-crypto_steganography.hide(imagename, 'Encrypted1.png', 'We will rock on')
+passcode = input("Enter your secret passcode: ")
+crypto_steganography.hide(imageName,outputName,passcode)
 
-print("Successfully Encrypted")
-
-'''
-secret = crypto_steganography.retrieve('Encrypted1.png')
-
-print(secret)
-# My secret message
+print("Successfully Encrypted...")
