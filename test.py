@@ -8,7 +8,7 @@ input()
 print()
 print()
 
-masterKey = inputga("Enter a key that you want to use throughout your lifetime: ")
+masterKey = input("Enter a key that you want to use throughout your lifetime: ")
 imageName = input("Enter the image name you want to put password to: ")
 outputName = input("Enter the name for your output image: ")
 print()
